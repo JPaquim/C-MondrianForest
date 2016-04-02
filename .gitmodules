@@ -1,0 +1,3 @@
+[submodule "C-LAB"]
+	path = C-LAB
+	url = git@github.com:JPaquim/C-LAB.git
