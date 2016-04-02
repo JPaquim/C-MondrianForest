@@ -1,2 +1,2 @@
 # C-MondrianForest
-Implements the Mondrian Forest online learning algorithm in C
+Implementation of the Mondrian Forest online learning algorithm in C
