@@ -13,14 +13,18 @@
 		E8687ABD1CB0473100CB59AC /* test_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = E8687AB91CB0470200CB59AC /* test_tree.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E8A414EC1CB04BE8007BD50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8A414E61CB04BE8007BD50A /* C-LAB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E8A414E91CB04BE8007BD50A;
+			remoteInfo = "C-Lab-doc";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		E8687A9C1CB046DD00CB59AC /* MondrianForest-doc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "MondrianForest-doc"; path = "/Users/jp/Dropbox/Thesis/C-Code/MondrianForest-C/build/Debug/MondrianForest-doc"; sourceTree = "<absolute>"; };
 		E8687AA51CB0470200CB59AC /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
-		E8687AA91CB0470200CB59AC /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
-		E8687AAA1CB0470200CB59AC /* sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sample.h; sourceTree = "<group>"; };
-		E8687AAB1CB0470200CB59AC /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
-		E8687AAC1CB0470200CB59AC /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
-		E8687AAD1CB0470200CB59AC /* libc-lab.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libc-lab.a"; sourceTree = "<group>"; };
 		E8687AAF1CB0470200CB59AC /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		E8687AB01CB0470200CB59AC /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
 		E8687AB31CB0470200CB59AC /* test.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; path = test.d; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		E8687AB71CB0470200CB59AC /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		E8687AB81CB0470200CB59AC /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		E8687AB91CB0470200CB59AC /* test_tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_tree.c; sourceTree = "<group>"; };
+		E8A414E61CB04BE8007BD50A /* C-LAB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "C-LAB.xcodeproj"; path = "C-LAB/C-LAB.xcodeproj"; sourceTree = "<group>"; };
+		E8A414F11CB04C2A007BD50A /* MondrianForest-doc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "MondrianForest-doc"; path = "/Users/jp/Dropbox/Thesis/C-Code/MondrianForest-C/build/Debug/MondrianForest-doc"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,34 +55,6 @@
 				E8687AA51CB0470200CB59AC /* tree.h */,
 			);
 			path = include;
-			sourceTree = "<group>";
-		};
-		E8687AA61CB0470200CB59AC /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				E8687AA71CB0470200CB59AC /* include */,
-				E8687AAD1CB0470200CB59AC /* libc-lab.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		E8687AA71CB0470200CB59AC /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E8687AA81CB0470200CB59AC /* c-lab */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		E8687AA81CB0470200CB59AC /* c-lab */ = {
-			isa = PBXGroup;
-			children = (
-				E8687AA91CB0470200CB59AC /* matrix.h */,
-				E8687AAA1CB0470200CB59AC /* sample.h */,
-				E8687AAB1CB0470200CB59AC /* scalar.h */,
-				E8687AAC1CB0470200CB59AC /* vector.h */,
-			);
-			path = "c-lab";
 			sourceTree = "<group>";
 		};
 		E8687AAE1CB0470200CB59AC /* src */ = {
@@ -113,11 +91,19 @@
 		E87C47761CB01B0900C1DFCD = {
 			isa = PBXGroup;
 			children = (
+				E8A414E61CB04BE8007BD50A /* C-LAB.xcodeproj */,
 				E8687AAE1CB0470200CB59AC /* src */,
 				E8687AA41CB0470200CB59AC /* include */,
 				E8687AB11CB0470200CB59AC /* tests */,
-				E8687AA61CB0470200CB59AC /* lib */,
 			);
+			sourceTree = "<group>";
+		};
+		E8A414E71CB04BE8007BD50A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8A414ED1CB04BE8007BD50A /* C-Lab-doc */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +138,7 @@
 			);
 			name = "MondrianForest-doc";
 			productName = "MondrianForest-doc";
-			productReference = E8687A9C1CB046DD00CB59AC /* MondrianForest-doc */;
+			productReference = E8A414F11CB04C2A007BD50A /* MondrianForest-doc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -182,6 +168,12 @@
 			mainGroup = E87C47761CB01B0900C1DFCD;
 			productRefGroup = E87C47761CB01B0900C1DFCD;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E8A414E71CB04BE8007BD50A /* Products */;
+					ProjectRef = E8A414E61CB04BE8007BD50A /* C-LAB.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E87C477B1CB01B0900C1DFCD /* MondrianForest */,
@@ -189,6 +181,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E8A414ED1CB04BE8007BD50A /* C-Lab-doc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "C-Lab-doc";
+			remoteRef = E8A414EC1CB04BE8007BD50A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8687A981CB046DD00CB59AC /* Sources */ = {
@@ -333,6 +335,7 @@
 				E8687AA21CB046DD00CB59AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87C477A1CB01B0900C1DFCD /* Build configuration list for PBXProject "MondrianForest" */ = {
 			isa = XCConfigurationList;
