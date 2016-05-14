@@ -1,0 +1,4 @@
+[submodule "lib/clab"]
+	path = lib/clab
+	url = https://github.com/jpaquim/clab
+	branch = master
