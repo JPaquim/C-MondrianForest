@@ -1,5 +1,5 @@
 #include "tree.h"
-#include "c-lab/matrix.h"
+#include "clab/matrix.h"
 
 /* under construction
 
